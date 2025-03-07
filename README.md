@@ -46,6 +46,7 @@ on 127th line in css file
 🔹 Custom Timer Durations – Let users set custom work and break times
 🔹 Dark Mode – Toggle between light and dark themes
 🔹 Task Tracking – Add a to-do list feature for better productivity
+🔹settings is non functional right now, will add that soon
 
 📜 License
 This project is licensed under the MIT License.
