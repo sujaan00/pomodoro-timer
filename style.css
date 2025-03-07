@@ -1,0 +1,130 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
+
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+}
+
+body {
+    /* font-family: 'Space Grotesk', sans-serif; */
+    /* text-align: center; */
+    background: url("images/nature.png") no-repeat center center fixed;
+    background-size: cover;
+    /* color: white; */
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mode Buttons (Pomodoro, Short Break, Long Break) */
+.modes {
+    display: flex;
+    gap: 10px;
+}
+
+.mode {
+    background: transparent;
+    border: 1px solid white;
+    padding: 8px 15px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    /* Added border effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.mode.active {
+    background: white;
+    color: black;
+    font-weight: bold;
+
+    /* Added border effect */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.mode:hover {
+    background: white;
+    color: black;
+}
+
+/* Timer Display */
+#pomodoro-timer {
+    font-size: 8rem;
+    letter-spacing: -2px;
+    font-variant-numeric: tabular-nums;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Controls (Start, Reset, Settings) */
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+     /* Adds spacing between buttons */
+}
+
+#start {
+    background: black;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    left: 35px;
+    top: -40px;
+
+    /* Added border effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+#start:hover {
+    background: transparent;
+}
+
+#reset {
+    background: transparent;
+    color: white;
+    padding: 12px 30px;
+    font-size: 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    left: 35px;
+    top: -37px;
+    transition: 0.2s;
+}
+
+#settings {
+    background: transparent;
+    color: white;
+    padding: 12px 30px;
+    font-size: 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+    top: -37px;
+    transition: 0.2s;
+}
+
+.spotify-container iframe {
+    filter: hue-rotate(180deg) brightness(1.2) contrast(1.1);
+}
+ 

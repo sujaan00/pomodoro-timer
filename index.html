@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-key.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <audio id="alarm-sound" src="audios/alarm.mp3" preload="auto"></audio>
+
+    <!-- Mode Selection -->
+    <div class="modes">
+        <button class="mode active" id="pomodoro">pomodoro</button>
+        <button class="mode" id="short-break">short break</button>
+        <button class="mode" id="long-break">long break</button>
+    </div>
+
+    <!-- Timer Display -->
+    <div id="pomodoro-timer">25:00</div>
+
+    <!-- Controls (Start, Reset, Settings) -->
+    <div class="controls">
+        <button id="start">start</button>
+        <button id="reset"><i class="fas fa-redo-alt"></i></button>
+        <button id="settings"><i class="fas fa-cog"></i></button>
+    </div>
+
+    <!-- Spotify Music Player -->
+    <div class="spotify-container">
+        <iframe style="border-radius:12px" 
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DXc8kgYqQLMfH?utm_source=generator" 
+            width="300" height="80" frameBorder="0" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
